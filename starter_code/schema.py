@@ -25,7 +25,7 @@ class UnifiedDocument(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "document_id": "doc-001",
+                "document_id": "csv_pdf_001",
                 "content": "Sample content...",
                 "source_type": "PDF",
                 "author": "Dr. Smith",
