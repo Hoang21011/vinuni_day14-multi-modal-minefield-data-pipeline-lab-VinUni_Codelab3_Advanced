@@ -92,7 +92,7 @@ def clean_transcript(file_path):
                 "spoken_vietnamese_price": spoken_price,
                 "numeric_vnd_prices": numeric_prices,
             },
-            "price_vnd": spoken_price or (numeric_prices[0] if numeric_prices else None),
+            "detected_price_vnd": spoken_price or (numeric_prices[0] if numeric_prices else None),
             "noise_tokens_removed": removed_tokens,
         },
     )
