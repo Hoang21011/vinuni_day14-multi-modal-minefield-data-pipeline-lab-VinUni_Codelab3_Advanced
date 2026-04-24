@@ -1,7 +1,7 @@
 [
     {
         "document_id": "csv_pdf_001",
-        "content": "Title: Purchase Order\nMain Topics: This document is a purchase order detailing an agreement between SNC Lavalin O&M Inc. (buyer) and ADVANCED PROPERTY SYSTEMS LTD. (seller) for routine maintenance services. Key information includes the P.O. Number (2182354), W.O. Number (11801597), date ordered (11/2/2023), and specific site details (10370 TERESA ROAD, LAKE COUNTRY). The order includes a general maintenance call and mileage, with detailed instructions for the work, such as addressing a difficult-to-open door and a stuck latch, requiring repairs, before/after pictures, and sending electronic verification and feedback. The document also provides contact information, totals, and a specific note for subcontractors regarding equipment, mail, and locks.",
+        "content": "Title: Purchase Order\nMain Topics: Document Identification (P.O. No., W.O. No., Date Ordered, Type); Sender Details (From: SNC Lavalin O&M Inc.); Recipient Details (To: ADVANCED PROPERTY SYSTEMS LTD.); Order Specifics (Site No., Location, Type, Modules, Lock, Pad); Line Item Details of Services and Mileage; Subcontractor Instructions and Notes; Purchase Order Total.",
         "source_type": "PDF",
         "author": "SNC LAVALIN O&M",
         "timestamp": null,
@@ -13,8 +13,6 @@
                         "Ln",
                         "Item #",
                         "Description",
-                        "Date Req.",
-                        "Time",
                         "Quantity",
                         "U/M",
                         "Unit Price",
@@ -22,30 +20,26 @@
                         "Original PO"
                     ],
                     "rows": [
-                        [
-                            "1",
-                            "7T-GMC1",
-                            "General Maintenance Call",
-                            "11/4/2023",
-                            "10:33:00",
-                            "1.00",
-                            "MD",
-                            "50.897",
-                            "50.90",
-                            null
-                        ],
-                        [
-                            "2",
-                            "7T-DUA1",
-                            "Mileage outside DUA",
-                            "11/4/2023",
-                            "10:33:00",
-                            "1.00",
-                            "KM",
-                            ".951",
-                            ".95",
-                            null
-                        ]
+                        {
+                            "Ln": "1",
+                            "Item #": "7T-GMC1",
+                            "Description": "General Maintenance Call\nDate Req. 11/4/2023\nTime 10:33:00",
+                            "Quantity": "1.00",
+                            "U/M": "MD",
+                            "Unit Price": "50.897",
+                            "Total": "50.90",
+                            "Original PO": "50.90"
+                        },
+                        {
+                            "Ln": "2",
+                            "Item #": "7T-DUA1",
+                            "Description": "Mileage outside DUA\nDate Req. 11/4/2023\nTime 10:33:00\nE201 MOD 2 ML 13493\nRSCM HAVING A HARD TIME OPENING/CLOSING DOORS\nLATCH AT THE TOP OF DOORS GETS STUCK\nPLS ATTEND\nREPAIR BACK TO SECURE WORKING ORDER\nTAKE BEFORE/AFTER PICS FOR UPLOAD\nSEND EV & FB\nFAX FROM LAURA 250-766-3105\nTHANK YOU",
+                            "Quantity": "1.00",
+                            "U/M": "KM",
+                            "Unit Price": ".951",
+                            "Total": ".95",
+                            "Original PO": ".95"
+                        }
                     ]
                 }
             ]
@@ -69,7 +63,7 @@
                     500000
                 ]
             },
-            "price_vnd": 500000,
+            "detected_price_vnd": 500000,
             "noise_tokens_removed": [
                 "[Music starts]",
                 "[Music ends]",

@@ -43,14 +43,13 @@ def run_forensic_test():
         print("[FAIL] Failed to extract the price mentioned in the audio transcript.")
         
     # Q3: Check for quality gate effectiveness
-# Q3: Check for quality gate effectiveness
     # Sử dụng .get() để tránh KeyError nếu bản ghi bị lỗi cấu trúc
     # 1. Đảm bảo d luôn là dict bằng cách kiểm tra kiểu dữ liệu
-# Nếu d là list, ta lấy phần tử đầu tiên của nó (nếu có)
+    # Nếu d là list, ta lấy phần tử đầu tiên của nó (nếu có)
     corrupt_check = any(
-    "Null pointer exception" in str(d.get('content', '')) 
-    for d in data if isinstance(d, dict)
-)
+        "Null pointer exception" in str(d.get('content', '')) 
+        for d in data if isinstance(d, dict)
+    )
     if not corrupt_check:
         print("[PASS] Quality gate successfully rejected corrupt content.")
         score += 1
