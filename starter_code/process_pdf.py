@@ -33,7 +33,7 @@ Analyze this document and extract the following:
 
 Output exactly as a JSON object matching this exact format:
 {
-    "document_id": "pdf-doc-001",
+    "document_id": "csv_pdf_001",
     "content": "Title: [Insert Title Here]\nMain Topics: [Insert Main Topics Here]",
     "source_type": "PDF",
     "author": "[Insert author name here]",
